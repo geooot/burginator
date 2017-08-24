@@ -1,5 +1,11 @@
 /**
  * Created by 164543 on 8/24/2017.
  */
-public class Main {
+
+import org.newdawn.slick.state.StateBasedGame;
+
+public class Main extends StateBasedGame {
+    public static void main(String[] args) {
+
+    }
 }

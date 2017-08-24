@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5207a747-8aed-427a-89c2-e29340a72d56" name="Default" comment="" />
+    <list default="true" id="5207a747-8aed-427a-89c2-e29340a72d56" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/lwjgl.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/jar/AppleJavaExtensions.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/jar/asm-debug-all.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/jar/jinput.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/jar/laf-plugin-7.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/jar/laf-widget-7.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/jar/log4j-api-2.0-beta9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/jar/lwjgl-debug.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/jar/lwjgl.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/jar/lwjgl_test.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/jar/lwjgl_util.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/jar/lwjgl_util_applet.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/jar/lzma.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/jar/substance-7.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/jar/trident-7.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/linux/libjinput-linux.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/linux/libjinput-linux64.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/linux/liblwjgl.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/linux/liblwjgl64.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/linux/libopenal.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/linux/libopenal64.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/macosx/libjinput-osx.dylib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/macosx/liblwjgl.dylib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/macosx/openal.dylib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/solaris/liblwjgl.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/solaris/liblwjgl64.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/solaris/libopenal.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/solaris/libopenal64.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/windows/OpenAL32.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/windows/OpenAL64.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/windows/jinput-dx8.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/windows/jinput-dx8_64.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/windows/jinput-raw.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/windows/jinput-raw_64.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/windows/lwjgl.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/native/windows/lwjgl64.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/slick.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Burginator.iml" afterPath="$PROJECT_DIR$/Burginator.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,9 +57,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="119">
+              <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,11 +83,18 @@
       <projects_view />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Main.java" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="516" />
+    <option name="y" value="422" />
+    <option name="width" value="1400" />
+    <option name="height" value="1013" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -64,6 +114,16 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Burginator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Burginator" />
@@ -111,6 +171,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="project.validation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dependencies/slick/slick.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.14941406" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -347,7 +411,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="516" y="422" width="1400" height="1013" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -364,7 +428,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -397,11 +461,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Burginator</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lwjgl</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
