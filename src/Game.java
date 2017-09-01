@@ -15,11 +15,13 @@ public class Game extends BasicGameState {
     private int stateID;
     private ArrayList<Tile> tiles;
     private ArrayList<BoundingBox> bounds;
+    private ControllableCharacter mainChar;
 
     public Game(int stateID){
         this.stateID = stateID;
         tiles = new ArrayList<>();
         bounds = new ArrayList<>();
+        mainChar = new ControllableCharacter();
     }
 
     @Override
@@ -40,7 +42,7 @@ public class Game extends BasicGameState {
             }
         }
         
-        bounds.add(new BoundingBox(0, 120, 5000, 150));
+        bounds.add(new BoundingBox(0, 600, 5000, 150));
 
     }
 
@@ -50,11 +52,21 @@ public class Game extends BasicGameState {
         for(Tile t : tiles){
             t.render(g);
         }
+        for(BoundingBox b : bounds){
+            b.render(g);
+        }
+        mainChar.render(g, bounds);
 
     }
 
     @Override
     public void update(GameContainer gameContainer, StateBasedGame stateBasedGame, int i) throws SlickException {
+
+    }
+
+    @Override
+    public void keyPressed(int key, char c) {
+        super.keyPressed(key, c);
 
     }
 
