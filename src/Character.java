@@ -97,7 +97,7 @@ class ControllableCharacter extends Character{
         g.drawString("left: " + b.doesItTouchLeft(getBoundingBox()) + "; right: " + b.doesItTouchRight(getBoundingBox()) + "; top: " + b.doesItTouchTop(getBoundingBox()), 10, 30);
         System.out.println("x: " + getXPos() + "; y: " + getYPos() + "; w: " + getXSize() + "; h: " + getYSize() + "; vx: " + velocityX + "; vy: " + velocityY + "; x+size: " + (getXPos() + getXSize()) + "; y+size: " + (getYPos() + getYSize()));
 
-        g.drawString("x: " + getXPos() + "; y: " + getYPos() + "; w: " + getXSize() + "; h: " + getYSize() + "; vx: " + velocityX + "; vy: " + velocityY + "; x+size: " + (getXPos() + getXSize()) + "; y+size: " + (getYPos() + getYSize()), 10, 50);
+        g.drawString("x: " + getXPos() + "; y: " + getYPos() + "; w: " + getXSize() + "; h: " + getYSize() + "; vx: " + velocityX + "; vy: " + velocityY + "; x+size: " + (getXPos() + getXSize()) + "; y+size: " + (getYPos() + getYSize()) + "; isOnGround:" + isOnGround, 10, 50);
         g.drawString("Bounding Box:", 10, 70);
         g.drawString("x: " + b.getXPos() + "; y: " + b.getYPos() + "; w: " + b.getXSize() + "; h: " + b.getYSize(), 10, 90);
 
@@ -122,7 +122,7 @@ class ControllableCharacter extends Character{
             //if (b.doesItCollide(getBoundingBox()) == 1 || b.doesItCollide(getBoundingBox()) == 3)
 
             if (b.doesItTouchTop(getBoundingBox())) {
-                setYPos(b.getYPos() - getYSize());
+                setYPos(b.getYPos() - getYSize() - 0.5f);
                 velocityY = 0.0f;
                 isOnGround = true;
             }else if(b.doesItTouchLeft(getBoundingBox())){

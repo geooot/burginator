@@ -10,20 +10,20 @@ import java.util.ArrayList;
  * Created by 164543 on 8/30/2017.
  */
 public class BoundingBox {
-    private int xPos;
-    private int yPos;
+    private float xPos;
+    private float yPos;
     private int xSize;
     private int ySize;
     private Rectangle r;
     public boolean useLastYPositionWhenColliding = false;
 
-    public BoundingBox(int xPos, int yPos, int xSize, int ySize) {
+    public BoundingBox(float xPos, float yPos, int xSize, int ySize) {
         this.xPos = xPos;
         this.yPos = yPos;
         this.xSize = xSize;
         this.ySize = ySize;
 
-        r = new Rectangle(xPos, yPos, xSize, ySize);
+        r = new Rectangle((int) xPos, (int) yPos, xSize, ySize);
     }
 
     public BoundingBox(int xPos, int yPos, int xSize, int ySize, boolean useLastYPositionWhenColliding) {
@@ -36,7 +36,7 @@ public class BoundingBox {
         r = new Rectangle(xPos, yPos, xSize, ySize);
     }
 
-    public int getXPos() {
+    public float getXPos() {
         return xPos;
     }
 
@@ -44,7 +44,7 @@ public class BoundingBox {
         this.xPos = xPos;
     }
 
-    public int getYPos() {
+    public float getYPos() {
         return yPos;
     }
 
@@ -73,39 +73,11 @@ public class BoundingBox {
         g.drawRect(xPos, yPos, xSize, ySize);
     }
 
-    public int doesItCollide(int x, int y, int width, int height){
-        boolean xCollision = r.intersects(new Rectangle(x,y,width,1));
-        boolean yCollision = r.intersects(new Rectangle(x,y,1,height));
-        if(!xCollision && !yCollision){
-            return 0;
-        }else if(xCollision && !yCollision){
-            return 1;
-        }else if(!xCollision){
-            return 2;
-        }else{
-            return 3;
-        }
-    }
 
-
-
-    public int doesItCollide(BoundingBox other){
-        boolean xCollision = r.intersects(new Rectangle(other.xPos,other.yPos,other.xSize,1));
-        boolean yCollision = r.intersects(new Rectangle(other.xPos,other.yPos,1, other.ySize));
-        if(!xCollision && !yCollision){
-            return 0;
-        }else if(xCollision && !yCollision){
-            return 1;
-        }else if(!xCollision){
-            return 2;
-        }else{
-            return 3;
-        }
-    }
 
 
     public boolean doesItTouchLeft(BoundingBox other){
-        Rectangle other_rect = new Rectangle(other.xPos,other.yPos,other.xSize,other.ySize);
+        Rectangle other_rect = new Rectangle((int) other.xPos,(int) other.yPos,other.xSize,other.ySize);
         float other_x1 = other.getXPos() + other.getXSize();
         float x1 = getXPos();
 
@@ -117,7 +89,7 @@ public class BoundingBox {
     }
 
     public boolean doesItTouchRight(BoundingBox other){
-        Rectangle other_rect = new Rectangle(other.xPos,other.yPos,other.xSize,other.ySize);
+        Rectangle other_rect = new Rectangle((int) other.xPos,(int) other.yPos,other.xSize,other.ySize);
         float other_x1 = other.getXPos();
         float x1 = getXPos() + getXSize();
 
@@ -129,7 +101,7 @@ public class BoundingBox {
     }
 
     public boolean doesItTouchTop(BoundingBox other){
-        Rectangle other_rect = new Rectangle(other.xPos,other.yPos,other.xSize,other.ySize);
+        Rectangle other_rect = new Rectangle((int) other.xPos,(int) other.yPos,other.xSize,other.ySize);
         float other_y1 = other.getYPos() + other.getYSize();
         float y1 = getYPos();
 
