@@ -37,7 +37,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../slick/slick.jar!/" />
+          <root url="jar://$MODULE_DIR$/dependencies/slick/slick.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

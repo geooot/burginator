@@ -40,7 +40,6 @@ public class Main extends StateBasedGame {
             AppGameContainer container = new AppGameContainer(new Main("Burginator"));
             container.setDisplayMode(WIDTH, HEIGHT, false);
             container.setTargetFrameRate(60);
-            Display.setResizable(true);
             container.start();
         } catch (SlickException e) {
             e.printStackTrace();

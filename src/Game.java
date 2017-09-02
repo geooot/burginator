@@ -1,8 +1,6 @@
+import javafx.stage.Screen;
 import org.lwjgl.opengl.Display;
-import org.newdawn.slick.Color;
-import org.newdawn.slick.GameContainer;
-import org.newdawn.slick.Graphics;
-import org.newdawn.slick.SlickException;
+import org.newdawn.slick.*;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
 
@@ -15,6 +13,7 @@ public class Game extends BasicGameState {
     private int stateID;
     private ArrayList<Tile> tiles;
     private ArrayList<BoundingBox> bounds;
+    private int x =0;
     private ControllableCharacter mainChar;
 
     public Game(int stateID){
@@ -43,11 +42,15 @@ public class Game extends BasicGameState {
         }
         
         bounds.add(new BoundingBox(0, 600, 5000, 150));
-
+        bounds.add(new BoundingBox(300,400,100,200));
     }
 
     @Override
     public void render(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException {
+        if(mainChar.getXPos() >= 550){
+            g.translate(-(mainChar.getXPos() - 550), 0);
+        }
+
         g.setColor(Color.blue);
         for(Tile t : tiles){
             t.render(g);
@@ -55,20 +58,27 @@ public class Game extends BasicGameState {
         for(BoundingBox b : bounds){
             b.render(g);
         }
+
+
         mainChar.render(g, bounds);
+
 
     }
 
     @Override
     public void update(GameContainer gameContainer, StateBasedGame stateBasedGame, int i) throws SlickException {
+        if(gameContainer.getInput().isKeyDown(Input.KEY_LEFT)) {
+            mainChar.goLeft();
+        }
+        if(gameContainer.getInput().isKeyDown(Input.KEY_RIGHT)){
+            mainChar.goRight();
+        }
+        if(gameContainer.getInput().isKeyDown(Input.KEY_UP)){
+            mainChar.jump();
+        }
 
     }
 
-    @Override
-    public void keyPressed(int key, char c) {
-        super.keyPressed(key, c);
-
-    }
 
     @Override
     public int getID() {
