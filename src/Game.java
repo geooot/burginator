@@ -1,5 +1,3 @@
-import javafx.stage.Screen;
-import org.lwjgl.opengl.Display;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
@@ -14,19 +12,19 @@ public class Game extends BasicGameState {
     private ArrayList<Tile> tiles;
     private ArrayList<BoundingBox> bounds;
     private int x =0;
-    private ControllableCharacter mainChar;
+    private BurgerCharacter mainChar;
 
-    public Game(int stateID){
+    public Game(int stateID) throws SlickException {
         this.stateID = stateID;
         tiles = new ArrayList<>();
         bounds = new ArrayList<>();
-        mainChar = new ControllableCharacter();
+        mainChar = new BurgerCharacter();
     }
 
     @Override
     public void init(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException {
-
-        for(int x = 0; x < 100; x++){
+        mainChar.init();
+        for(int x = 0; x < 40; x++){
             for(int y = 0; y < 16; y++){
                 Tile t;
                 if(y == 12){
@@ -41,7 +39,7 @@ public class Game extends BasicGameState {
             }
         }
         
-        bounds.add(new BoundingBox(0, 600, 5000, 150));
+        bounds.add(new BoundingBox(0, 600, 2000, 150));
         bounds.add(new BoundingBox(300,400,100,200));
     }
 

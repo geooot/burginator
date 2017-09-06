@@ -24,7 +24,7 @@ public class Main extends StateBasedGame {
     public static final int WIDTH = 1280;
     public static final int HEIGHT = 720;
 
-    public Main(String title) throws IOException {
+    public Main(String title) throws IOException, SlickException {
         super(title);
         //add states
         addState(new Game(GAME_STATE));
