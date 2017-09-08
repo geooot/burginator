@@ -1,7 +1,5 @@
-import org.newdawn.slick.Color;
-import org.newdawn.slick.Graphics;
-import org.newdawn.slick.Image;
-import org.newdawn.slick.SlickException;
+import com.sun.corba.se.impl.orbutil.graph.Graph;
+import org.newdawn.slick.*;
 
 import java.util.ArrayList;
 import java.util.Stack;
@@ -99,6 +97,14 @@ class CharacterWithPhysics extends Character{
         this.velocityY = velocityY;
     }
 
+    public float getGravity() {
+        return gravity;
+    }
+
+    public void setGravity(float gravity) {
+        this.gravity = gravity;
+    }
+
     public void render(Graphics g, ArrayList<BoundingBox> arr){
         step(arr);
         getBoundingBox().render(g);
@@ -118,19 +124,22 @@ class CharacterWithPhysics extends Character{
         for(BoundingBox b : arr) {
             if (b.doesItTouchTop(getBoundingBox())) {
                 setYPos(b.getYPos() - getYSize() - 0.5f);
-                velocityY = 0.0f;
+                velocityY = 0;
+                velocityX = 0.0f;
                 isOnGround = true;
             }else if(b.doesItTouchLeft(getBoundingBox())){
                 setXPos(b.getXPos() - getXSize());
             }else if(b.doesItTouchRight(getBoundingBox())){
                 setXPos(b.getXPos() + b.getXSize());
             }
-
-
         }
+
 
         if (getXPos() < 0)
             setXPos(0);
+
+        if(getXPos() >= 1850)
+            setXPos(1850);
 
         setBoundingBox(new BoundingBox((int) getXPos(),(int) getYPos(),getXSize(),getYSize()));
     }
@@ -139,18 +148,21 @@ class CharacterWithPhysics extends Character{
 }
 
 class ControllableCharacter extends CharacterWithPhysics {
+    public int lastMovement = 1;
     public void goLeft(){
+        lastMovement = -1;
         setXPos(getXPos() - 8f);
     }
 
     public void goRight(){
+        lastMovement = 1;
         setXPos(getXPos() + 8f);
     }
 
     public void jump(){
         if(isOnGround) {
             setYPos(getYPos() - 10);
-            setVelocityY(getVelocityY() - 16.0f);
+            setVelocityY(getVelocityY() - 20.0f);
         }
     }
 }
@@ -160,23 +172,153 @@ class BurgerCharacter extends  ControllableCharacter{
     public Stack<Image> items = new Stack<>();
     private Image burgerTopImage;
     private Image burgerBottomImage;
-    private Image patty;
+    public Image patty;
+    public Image lettuce;
+    public Image cheese;
+    public boolean gotHit = false;
+    private int totalHeight = 70;
+
 
 
     public void init() throws SlickException {
         burgerTopImage = new Image("images/BurgerBunTop.png");
         burgerBottomImage = new Image("images/BurgerBunBottom.png");
         patty = new Image("images/Patty.png");
+        lettuce = new Image("images/lettuce.png");
+        cheese = new Image("images/cheese.png");
     }
 
     @Override
     public void render(Graphics g, ArrayList<BoundingBox> arr) {
         super.render(g, arr);
-
-        g.drawImage(burgerBottomImage, getXPos(),getYPos() + getYSize() - 50, 0, 0, 150, 50);
-        g.drawImage(patty, getXPos(), getYPos() + getYSize() - 35, 0, 0, 150, 25);
-        g.drawImage(burgerTopImage, getXPos(),getYPos() + getYSize() - 80, 0, 0, 150, 50);
+        gotHit = true;
+        renderStack(g);
 
     }
 
+    private void renderStack(Graphics g){
+        totalHeight = 70;
+        int oldHeight = getYSize();
+        int yPos = 20;
+        g.drawImage(burgerBottomImage, getXPos(),getYPos() + getYSize() - 20, 0, 0, 150, 20);
+        for(Image item : items){
+            yPos += 20;
+            g.drawImage(item, getXPos(), getYPos() + getYSize() - yPos, 0, 0, 150, 20);
+            totalHeight += 20;
+        }
+        g.drawImage(burgerTopImage, getXPos(),getYPos() + getYSize() - (yPos + 50), 0, 0, 150, 50);
+        setYSize(totalHeight);
+        setYPos(getYPos() - (totalHeight - oldHeight));
+    }
+
+    public void addToStack(Image item){
+        items.push(item);
+        System.out.println(totalHeight);
+    }
+
+    public void gotHit(){
+        if(items.size() > 0)
+            items.pop();
+        gotHit = true;
+        System.out.println(totalHeight);
+    }
+
+    public Projectile shootItem(){
+        Image itemPopped = items.pop();
+        return new Projectile(itemPopped, getXPos(),getYPos() + 70, lastMovement);
+    }
+
+    public int getTotalHeight() {
+        return totalHeight;
+    }
+}
+
+class EnemyCharacter extends ControllableCharacter {
+    private Animation enemyWalkingAnimationRight;
+    private Animation enemyWalkingAnimationLeft;
+    private Animation dyingAnimation;
+    private Animation currentAnimation;
+    private int health;
+    private int startingHealth;
+    private int speedReducer;
+    private boolean gotHit = false;
+
+    public EnemyCharacter(int x, int y) throws SlickException {
+        setXSize(100);
+        setYSize(200);
+        setXPos(x);
+        setYPos(y);
+        health = (int)(Math.random() * 3) + 1;
+        startingHealth = health;
+        speedReducer = (int)(Math.random() * 6) + 2;
+    }
+
+    public void init() throws SlickException {
+        SpriteSheet enemyWalkingSpritesLeft = new SpriteSheet(new Image("images/enemyAnimation_left.png"), 100, 200);
+        enemyWalkingAnimationLeft = new Animation(enemyWalkingSpritesLeft, 100);
+        SpriteSheet enemyWalkingSpritesRight = new SpriteSheet(new Image("images/enemyAnimation_right.png"), 100, 200);
+        enemyWalkingAnimationRight = new Animation(enemyWalkingSpritesRight, 100);
+        SpriteSheet enemyDyingSprites = new SpriteSheet(new Image("images/enemyAnimationDying.png"), 100, 200);
+        dyingAnimation = new Animation(enemyDyingSprites, 30);
+
+    }
+
+    public void render(Graphics g, ArrayList<BoundingBox> arr, BurgerCharacter mainChar) {
+        if(mainChar.getXPos() > getXPos()){
+            goRight();
+        }else if(mainChar.getXPos() < getXPos()){
+            goLeft();
+        }
+        super.render(g, arr);
+        if(getBoundingBox().doesItIntesect(mainChar.getBoundingBox())){
+            mainChar.gotHit();
+            mainChar.setYPos(mainChar.getYPos() - 10);
+            mainChar.setXPos(mainChar.getXPos() + (lastMovement)*10);
+            mainChar.setVelocityX((lastMovement)*10);
+            mainChar.setVelocityY(-15);
+        }
+
+        if(!gotHit) {
+            if (lastMovement > 0)
+                currentAnimation = enemyWalkingAnimationRight;
+            else
+                currentAnimation = enemyWalkingAnimationLeft;
+        }else{
+            currentAnimation = dyingAnimation;
+        }
+
+        //currentAnimation = dyingAnimation;
+
+        currentAnimation.draw(getXPos(), getYPos());
+
+        if(isOnGround){
+            gotHit = false;
+        }
+    }
+
+    @Override
+    public void goLeft() {
+        super.goLeft();
+        setXPos(getXPos() + speedReducer);
+    }
+
+    @Override
+    public void goRight() {
+        super.goRight();
+        setXPos(getXPos() - speedReducer);
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void gotHit(){
+        health--;
+        currentAnimation = dyingAnimation;
+        gotHit = true;
+    }
+
+    public int getStartingHealth() {
+        return startingHealth;
+    }
 }

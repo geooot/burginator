@@ -17,7 +17,6 @@ import org.newdawn.slick.state.transition.Transition;
 
 public class Main extends StateBasedGame {
 
-    public static final int MENU_STATE = 0;
     public static final int GAME_STATE = 1;
     public static final int GAME_OVER_STATE = 2;
     public static final int WIN_STATE = 3;
@@ -28,7 +27,12 @@ public class Main extends StateBasedGame {
         super(title);
         //add states
         addState(new Game(GAME_STATE));
+        addState(new GameOver(GAME_OVER_STATE));
+        addState(new GameWin(WIN_STATE));
+
     }
+
+
 
     @Override
     public void initStatesList(GameContainer container) throws SlickException {
