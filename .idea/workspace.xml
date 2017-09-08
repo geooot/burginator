@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Burginator:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5207a747-8aed-427a-89c2-e29340a72d56" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CollectableItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GameOver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GameWin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PhysicsProjectiles.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/BurgerBunBottom.png" afterPath="$PROJECT_DIR$/images/BurgerBunBottom.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Burginator/BoundingBox.class" afterPath="$PROJECT_DIR$/out/production/Burginator/BoundingBox.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Burginator/BurgerCharacter.class" afterPath="$PROJECT_DIR$/out/production/Burginator/BurgerCharacter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Burginator/Character.class" afterPath="$PROJECT_DIR$/out/production/Burginator/Character.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Burginator/CharacterWithPhysics.class" afterPath="$PROJECT_DIR$/out/production/Burginator/CharacterWithPhysics.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Burginator/ControllableCharacter.class" afterPath="$PROJECT_DIR$/out/production/Burginator/ControllableCharacter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Burginator/Game.class" afterPath="$PROJECT_DIR$/out/production/Burginator/Game.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Burginator/GrassBottom.class" afterPath="$PROJECT_DIR$/out/production/Burginator/GrassBottom.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Burginator/GrassTop.class" afterPath="$PROJECT_DIR$/out/production/Burginator/GrassTop.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Burginator/Main.class" afterPath="$PROJECT_DIR$/out/production/Burginator/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BoundingBox.java" afterPath="$PROJECT_DIR$/src/BoundingBox.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Character.java" afterPath="$PROJECT_DIR$/src/Character.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game.java" afterPath="$PROJECT_DIR$/src/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tile.java" afterPath="$PROJECT_DIR$/src/Tile.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,14 +24,29 @@
       <file leaf-file-name="Character.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Character.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="230" column="33" lean-forward="false" selection-start-line="230" selection-start-column="33" selection-end-line="230" selection-end-column="33" />
+            <state relative-caret-position="249">
+              <caret line="201" column="22" lean-forward="false" selection-start-line="201" selection-start-column="22" selection-end-line="201" selection-end-column="22" />
               <folding>
-                <element signature="e#5747#5748#0" expanded="true" />
-                <element signature="e#8329#8330#0" expanded="true" />
-                <element signature="e#8358#8359#0" expanded="true" />
-                <element signature="e#8513#8514#0" expanded="true" />
-                <element signature="e#8550#8551#0" expanded="true" />
+                <element signature="e#5291#5292#0" expanded="true" />
+                <element signature="e#5323#5324#0" expanded="true" />
+                <element signature="e#5633#5634#0" expanded="true" />
+                <element signature="e#5667#5668#0" expanded="true" />
+                <element signature="e#8249#8250#0" expanded="true" />
+                <element signature="e#8278#8279#0" expanded="true" />
+                <element signature="e#8433#8434#0" expanded="true" />
+                <element signature="e#8470#8471#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoundingBox.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BoundingBox.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="910">
+              <caret line="82" column="33" lean-forward="false" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/src/PhysicsProjectiles.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-47">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,8 +67,8 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2079">
-              <caret line="156" column="9" lean-forward="true" selection-start-line="156" selection-start-column="9" selection-end-line="156" selection-end-column="9" />
+            <state relative-caret-position="2370">
+              <caret line="158" column="5" lean-forward="true" selection-start-line="158" selection-start-column="5" selection-end-line="158" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,7 +79,7 @@
       <file leaf-file-name="GameWin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameWin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="104">
               <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
               <folding />
             </state>
@@ -86,8 +89,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+            <state relative-caret-position="116">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -126,7 +129,6 @@
       <find>100</find>
       <find>Display</find>
       <find>mainChar</find>
-      <find>System.out</find>
       <find>mainChar.init</find>
       <find>enemy</find>
       <find>System</find>
@@ -136,6 +138,10 @@
       <find>Math.random</find>
       <find>Math</find>
       <find>.drawStrin</find>
+      <find>System.out</find>
+      <find>heal</find>
+      <find>render</find>
+      <find>bounds</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,9 +162,9 @@
         <option value="$PROJECT_DIR$/src/Tile.java" />
         <option value="$PROJECT_DIR$/src/GameOver.java" />
         <option value="$PROJECT_DIR$/src/PhysicsProjectiles.java" />
+        <option value="$PROJECT_DIR$/src/GameWin.java" />
         <option value="$PROJECT_DIR$/src/Character.java" />
         <option value="$PROJECT_DIR$/src/Game.java" />
-        <option value="$PROJECT_DIR$/src/GameWin.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -595,11 +601,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5747#5748#0" expanded="true" />
-            <element signature="e#8329#8330#0" expanded="true" />
-            <element signature="e#8358#8359#0" expanded="true" />
-            <element signature="e#8513#8514#0" expanded="true" />
-            <element signature="e#8550#8551#0" expanded="true" />
+            <element signature="e#5291#5292#0" expanded="true" />
+            <element signature="e#5323#5324#0" expanded="true" />
+            <element signature="e#5633#5634#0" expanded="true" />
+            <element signature="e#5667#5668#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8278#8279#0" expanded="true" />
+            <element signature="e#8433#8434#0" expanded="true" />
+            <element signature="e#8470#8471#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -651,11 +660,14 @@
         <state relative-caret-position="855">
           <caret line="90" column="5" lean-forward="false" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
-            <element signature="e#5747#5748#0" expanded="true" />
-            <element signature="e#8329#8330#0" expanded="true" />
-            <element signature="e#8358#8359#0" expanded="true" />
-            <element signature="e#8513#8514#0" expanded="true" />
-            <element signature="e#8550#8551#0" expanded="true" />
+            <element signature="e#5291#5292#0" expanded="true" />
+            <element signature="e#5323#5324#0" expanded="true" />
+            <element signature="e#5633#5634#0" expanded="true" />
+            <element signature="e#5667#5668#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8278#8279#0" expanded="true" />
+            <element signature="e#8433#8434#0" expanded="true" />
+            <element signature="e#8470#8471#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -706,11 +718,14 @@
         <state relative-caret-position="855">
           <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
-            <element signature="e#5747#5748#0" expanded="true" />
-            <element signature="e#8329#8330#0" expanded="true" />
-            <element signature="e#8358#8359#0" expanded="true" />
-            <element signature="e#8513#8514#0" expanded="true" />
-            <element signature="e#8550#8551#0" expanded="true" />
+            <element signature="e#5291#5292#0" expanded="true" />
+            <element signature="e#5323#5324#0" expanded="true" />
+            <element signature="e#5633#5634#0" expanded="true" />
+            <element signature="e#5667#5668#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8278#8279#0" expanded="true" />
+            <element signature="e#8433#8434#0" expanded="true" />
+            <element signature="e#8470#8471#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -761,11 +776,14 @@
         <state relative-caret-position="675">
           <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
           <folding>
-            <element signature="e#5747#5748#0" expanded="true" />
-            <element signature="e#8329#8330#0" expanded="true" />
-            <element signature="e#8358#8359#0" expanded="true" />
-            <element signature="e#8513#8514#0" expanded="true" />
-            <element signature="e#8550#8551#0" expanded="true" />
+            <element signature="e#5291#5292#0" expanded="true" />
+            <element signature="e#5323#5324#0" expanded="true" />
+            <element signature="e#5633#5634#0" expanded="true" />
+            <element signature="e#5667#5668#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8278#8279#0" expanded="true" />
+            <element signature="e#8433#8434#0" expanded="true" />
+            <element signature="e#8470#8471#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -816,11 +834,14 @@
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#5747#5748#0" expanded="true" />
-            <element signature="e#8329#8330#0" expanded="true" />
-            <element signature="e#8358#8359#0" expanded="true" />
-            <element signature="e#8513#8514#0" expanded="true" />
-            <element signature="e#8550#8551#0" expanded="true" />
+            <element signature="e#5291#5292#0" expanded="true" />
+            <element signature="e#5323#5324#0" expanded="true" />
+            <element signature="e#5633#5634#0" expanded="true" />
+            <element signature="e#5667#5668#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8278#8279#0" expanded="true" />
+            <element signature="e#8433#8434#0" expanded="true" />
+            <element signature="e#8470#8471#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -924,16 +945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BoundingBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="82" column="33" lean-forward="false" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/dependencies/slick/slick.jar!/org/newdawn/slick/state/StateBasedGame.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -956,42 +967,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Character.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="230" column="33" lean-forward="false" selection-start-line="230" selection-start-column="33" selection-end-line="230" selection-end-column="33" />
-          <folding>
-            <element signature="e#5747#5748#0" expanded="true" />
-            <element signature="e#8329#8330#0" expanded="true" />
-            <element signature="e#8358#8359#0" expanded="true" />
-            <element signature="e#8513#8514#0" expanded="true" />
-            <element signature="e#8550#8551#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameWin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PhysicsProjectiles.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-47">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/BoundingBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="910">
+          <caret line="82" column="33" lean-forward="false" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="201" column="22" lean-forward="false" selection-start-line="201" selection-start-column="22" selection-end-line="201" selection-end-column="22" />
+          <folding>
+            <element signature="e#5291#5292#0" expanded="true" />
+            <element signature="e#5323#5324#0" expanded="true" />
+            <element signature="e#5633#5634#0" expanded="true" />
+            <element signature="e#5667#5668#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8278#8279#0" expanded="true" />
+            <element signature="e#8433#8434#0" expanded="true" />
+            <element signature="e#8470#8471#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameWin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2079">
-          <caret line="156" column="9" lean-forward="true" selection-start-line="156" selection-start-column="9" selection-end-line="156" selection-end-column="9" />
+        <state relative-caret-position="2370">
+          <caret line="158" column="5" lean-forward="true" selection-start-line="158" selection-start-column="5" selection-end-line="158" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1000,8 +1024,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        <state relative-caret-position="116">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -1015,10 +1039,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>Burginator:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1066,7 +1092,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

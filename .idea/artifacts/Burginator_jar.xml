@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Burginator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Burginator_jar</output-path>
+    <root id="archive" name="Burginator.jar">
+      <element id="module-output" name="Burginator" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dependencies/slick/jar/lwjgl_util_applet.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dependencies/slick/jar/lwjgl.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dependencies/slick/jar/lwjgl_util.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dependencies/slick/slick.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

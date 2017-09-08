@@ -2,6 +2,7 @@
  * Created by George Thayamkery on 8/24/2017.
  */
 
+import java.io.File;
 import java.io.IOException;
 
 import org.lwjgl.opengl.Display;
@@ -40,6 +41,7 @@ public class Main extends StateBasedGame {
     }
 
     public static void main(String[] argv) throws IOException {
+        System.setProperty("org.lwjgl.librarypath", System.getProperty("user.dir") + File.separator + "libs");
         try {
             AppGameContainer container = new AppGameContainer(new Main("Burginator"));
             container.setDisplayMode(WIDTH, HEIGHT, false);

@@ -16,7 +16,6 @@ public class Game extends BasicGameState {
     private ArrayList<BoundingBox> bounds;
     private ArrayList<Projectile> projectiles;
     private ArrayList<EnemyCharacter> enemies;
-    private int x =0;
     private int requiredHeightToWin = 250;
     private BurgerCharacter mainChar;
     private Image bg;
@@ -90,9 +89,6 @@ public class Game extends BasicGameState {
         for(Tile t : tiles){
             t.render(g);
         }
-        for(BoundingBox b : bounds){
-            b.render(g);
-        }
 
         mainChar.render(g, bounds);
 
@@ -137,7 +133,7 @@ public class Game extends BasicGameState {
         if(gameContainer.getInput().isKeyPressed(Input.KEY_Z)){
             addRandomItemToMainChar();
         }
-        if(gameContainer.getInput().isKeyPressed(Input.KEY_X)){
+        if(gameContainer.getInput().isKeyPressed(Input.KEY_SPACE)){
             if(mainChar.items.size() > 0) {
                 Projectile p = mainChar.shootItem();
                 projectiles.add(p);

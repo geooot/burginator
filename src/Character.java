@@ -107,7 +107,7 @@ class CharacterWithPhysics extends Character{
 
     public void render(Graphics g, ArrayList<BoundingBox> arr){
         step(arr);
-        getBoundingBox().render(g);
+        //getBoundingBox().render(g);
     }
 
     public void step(ArrayList<BoundingBox> arr){
@@ -213,14 +213,12 @@ class BurgerCharacter extends  ControllableCharacter{
 
     public void addToStack(Image item){
         items.push(item);
-        System.out.println(totalHeight);
     }
 
     public void gotHit(){
         if(items.size() > 0)
             items.pop();
         gotHit = true;
-        System.out.println(totalHeight);
     }
 
     public Projectile shootItem(){
